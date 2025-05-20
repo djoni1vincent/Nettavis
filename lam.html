@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Påske</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./favicon.png">
+  </head>
+
+  <body class="ukraine-body">
+    <header>
+      <div class="logo"></div>
+      <div class="navbar">
+        <ul>
+          <li><a href="./index.html">Hjem</a></li>
+          <li><a href="./timer.html">Påske</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <body>
+      <div class="main">
+        <div class="imgPaska">
+          <img src="./images/bilde 1.jpg" alt="" />
+        </div>
+        <div class="main-paska">
+          <h2>Langtidsstekt lammelår</h2>
+          <div class="txtUA">
+            Langtidsstekt lammelår er en klassisk norsk påskematrett som
+            forbindes med samvær, tradisjon og høytid. Retten består av lammelår
+            som stekes sakte i ovnen over flere timer for å få kjøttet mørt,
+            saftig og smakfullt. Den tilberedes ofte med hvitløk, rosmarin og
+            grønnsaker, og serveres med poteter og brun saus. Langsom steking
+            fremhever lammets naturlige smak og gjør det til et festmåltid.
+          </div>
+
+          <h2>Historie og tradisjoner</h2>
+          <div class="txtUA">
+            Lammelår har lenge vært en del av norsk påsketradisjon, både som et
+            symbol på vår og som en påminnelse om det kristne påskebudskapet. I
+            mange norske hjem samles familien rundt bordet for å nyte et godt
+            lammemåltid etter en dag i kirken eller på fjellet. Retten markerer
+            avslutningen på fastetiden og innleder en høytid fylt med fellesskap
+            og glede.
+          </div>
+
+          <section class="recipe-section">
+            <h2 class="recipe-title">
+              Oppskrift på Mammas langtidsstekte lammelår
+            </h2>
+            <div class="recipe-wrapper">
+              <div class="recipe-text">
+                <h3>Du trenger:</h3>
+                <ul class="ingredients">
+                  <li>God tid</li>
+                  <li>1 stk lammelår</li>
+                  <li>1–2 gulrøtter</li>
+                  <li>1 løk / et godt stykke purreløk</li>
+                  <li>Olivenolje</li>
+                  <li>2–3 ss rosmarin</li>
+                  <li>1–2 hele hvitløk</li>
+                  <li>Salt og pepper</li>
+                  <li>En XL stekepose</li>
+                  <li>3–4 dl eplejus / vin</li>
+                </ul>
+
+                <h3>Tilbehør:</h3>
+                <ul class="ingredients">
+                  <li>Poteter og grønnsaker etter eget ønske</li>
+                  <li>Peppermyntegele</li>
+                </ul>
+              </div>
+
+              <div class="recipe-image">
+                <img
+                  src="./images/lammestek.jpg"
+                  alt="Langtidsstekt lammelår"
+                />
+              </div>
+            </div>
+
+            <div class="recipe-toggle-wrapper">
+              <button id="toggleLammelarBtn" class="center-btn">
+                👩‍🍳 Sånn gjør du det:
+              </button>
+            </div>
+
+            <div
+              id="lammelarInstructions"
+              class="recipe-instructions"
+              style="display: none"
+            >
+              <ol class="recipe-instructions-list">
+                <li>
+                  Ta lammelåret ut av posen det kommer i og legg det på et
+                  stekebrett.
+                </li>
+                <li>
+                  Skjær hvert hvitløksfedd på langs i 3–4 biter (de skal stikkes
+                  inn i lammelåret senere).
+                </li>
+                <li>
+                  Stikk små hull i lammelåret og dytt inn hvitløksbitene. Salt
+                  kjøttet godt.
+                </li>
+                <li>
+                  Knus rosmarin i morter, bland med olivenolje og pepper. Gni
+                  godt inn i kjøttet, også i hullene.
+                </li>
+                <li>
+                  Brun låret i ovn på 250°C med grillfunksjon i 10–20 minutter.
+                  Snu og følg nøye med.
+                </li>
+                <li>
+                  Skrell gulrøtter og rens løk. Skjær i grove biter og legg i
+                  bunnen av stekeposen.
+                </li>
+                <li>
+                  Legg kjøttet i stekeposen oppå grønnsakene. Hell eplejus (med
+                  kraft fra steking) over.
+                </li>
+                <li>
+                  Kutt et lite hull i stekeposen og stek på 70°C i 6–10 timer
+                  til kjernetemp er 65–70°C.
+                </li>
+                <li>
+                  Pakk kjøttet i folie og la hvile. Hell kraft og grønnsaker i
+                  en kasserolle – dette er sausen.
+                </li>
+                <li>
+                  Kok opp og mos grønnsakene. Smak til, jevn med brun jevning og
+                  spe med fløte.
+                </li>
+                <li>
+                  Kok poteter og damp grønnsaker. Server med saus,
+                  peppermyntegele eller tyttebærsyltetøy.
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <script>
+            const toggleBtn = document.getElementById("toggleLammelarBtn");
+            const instructions = document.getElementById(
+              "lammelarInstructions"
+            );
+
+            toggleBtn.addEventListener("click", () => {
+              instructions.style.display =
+                instructions.style.display === "none" ? "block" : "none";
+            });
+          </script>
+        </div>
+      </div>
+    </body>
+  </body>
+</html>

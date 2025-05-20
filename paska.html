@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Påske</title>
+    <link rel="stylesheet" href="./styles/main.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./favicon.png">
+</head>
+<body class="ukraine-body">
+    
+    <header>
+        <div class="logo"></div>
+        <div class="navbar">
+            <ul>
+                <li><a href="./index.html">Hjem</a></li>
+                <li><a href="./timer.html">Påske</a></li>
+            </ul>
+        </div>
+    </header>
+<body>
+
+<div class="main">
+
+    <div class="imgPaska">
+        <img src="./images/poskeua.jpg" alt="">
+    </div>
+    <div class="main-paska">
+
+    <h2>Ukrainsk påske brød (Paska)</h2>
+    <div class="txtUA">
+        Ukrainsk paska er et tradisjonelt påskebrød som symboliserer gjenfødelse og velstand. Det er laget av søt gjærdeig med melk, egg, smør og sukker, og ofte pyntet med flettede mønstre eller kors. Mange familier baker paska til påske og tar det med til kirken for velsignelse. Brødet har en myk, luftig konsistens og en mild, søt smak. Noen varianter inneholder rosiner eller sitrusskall for ekstra aroma.
+    </div>
+
+    <h2>Historie og tradisjoner</h2>
+    <div class="txtUA">
+        Paska er et viktig symbol på påsken i Ukraina, som representerer gjenfødelse og velstand. Familien baker paska etter tradisjonelle oppskrifter og tar den med til kirken for velsignelse. Brødet er ofte kunstferdig dekorert med religiøse symboler. Etter velsignelsen nytes det i fellesskap med familie under påskefrokosten.
+    </div>
+
+
+    <h1 class="recipe-title">Oppskrift på Påskekake</h1>
+<div class="recipe-section">
+  <h2 class="recipe-ingredients-title">Ingredienser</h2>
+  <ul class="recipe-ingredients-list">
+    <li>750–800 g hvetemel</li>
+    <li>220 ml varm melk (2,5%)</li>
+    <li>25 g fersk gjær</li>
+    <li>1 egg</li>
+    <li>1 eggeplomme</li>
+    <li>2 ss rømme (20%)</li>
+    <li>225 g sukker + 1 ss til gjærblanding</li>
+    <li>10 g vaniljesukker</li>
+    <li>1 appelsin (saft og skall)</li>
+    <li>100 g mykt smør (82,5%)</li>
+    <li>2 ss solsikkeolje</li>
+    <li>25 ml konjakk/whisky/rom</li>
+    <li>100 g rosiner eller kandisert frukt</li>
+    <li>200 g melis</li>
+    <li>En klype salt</li>
+    <li>Dekorativt strøssel (valgfritt)</li>
+  </ul>
+</div>
+
+
+</div>
+   
+</div>
+<div class="recipe-toggle-wrapper">
+    <button id="toggleInstructionsBtn">📖 Vis/skjul fremgangsmåte</button>
+  
+    <div id="recipeInstructions" class="hidden">
+      <div class="recipe-instructions-section">
+        <h2 class="recipe-instructions-title">Fremgangsmåte – Slik lager du paska</h2>
+  
+        <div class="recipe-instructions-wrapper">
+          <div class="recipe-text">
+            <ol class="recipe-instructions-list">
+              <li>Smuldre gjæren i en liten bolle. Tilsett 1 ss sukker og litt av den varme melken. Rør og la stå i 10–15 minutter til det skummer.</li>
+              <li>I en stor bolle: visp egg, eggeplomme, sukker, vaniljesukker, rømme, appelsinsaft og revet skall.</li>
+              <li>Hell i resten av melken og den ferdige gjærblandingen. Bland godt.</li>
+              <li>Sikt melet og rør det inn litt etter litt sammen med en klype salt. Elt deigen i 10–15 minutter til den er jevn og elastisk.</li>
+              <li>Tilsett smeltet smør og solsikkeolje i små mengder. Fortsett å elte til alt er godt blandet.</li>
+              <li>Rør inn rosiner eller kandisert frukt. Bland forsiktig.</li>
+              <li>Dekk bollen med et kjøkkenhåndkle og la deigen heve et varmt sted i 1–1,5 time.</li>
+              <li>Form deigen til små brød og legg i smurte former. La heve i 30–40 minutter til.</li>
+              <li>Pensle toppen med eggeplomme og stek i ovnen på 180°C i 35–45 minutter til gyllen farge.</li>
+              <li>Avkjøl på rist. Pynt med melisglasur og strøssel om ønskelig.</li>
+            </ol>
+          </div>
+  
+          <div class="recipe-image">
+            <img src="./images/paska-baking.jpg" alt="Ukrainsk paska" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script>
+        const toggleInstructionsBtn = document.getElementById('toggleInstructionsBtn');
+        const recipeInstructions = document.getElementById('recipeInstructions');
+    
+        toggleInstructionsBtn.addEventListener('click', () => {
+        recipeInstructions.classList.toggle('hidden');
+        toggleInstructionsBtn.textContent = recipeInstructions.classList.contains('hidden') ? '📖 Vis/skjul fremgangsmåte' : '❌ Skjul fremgangsmåte';
+        });
+    </script>
+  </div>
+    
+</body>
+</html>
